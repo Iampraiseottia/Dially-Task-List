@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(242, 240, 240);
+    font-family: sans-serif, Arial, Helvetica;
+}
