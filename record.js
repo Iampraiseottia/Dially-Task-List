@@ -38,3 +38,30 @@ function displaySameData(){
 
 displaySameData();
 
+// DISPLAY DATE
+const date =  document.getElementById('Date');
+const displayDate =  document.getElementById('displayDate');
+const currentDate = new Date();
+const dateOptions = { dateStyle: 'short' };
+const formattedDate = currentDate.toLocaleDateString(undefined, dateOptions);
+displayDate.textContent = formattedDate;
+displayDate.style.fontWeight = '600';
+
+date.addEventListener('input', function() {
+    const value = date.value;
+    displayDate.textContent = `The Above Task Is To Be Completed On ${value}`;
+    saveDataLocally2();
+});
+
+function saveDataLocally2(){
+    localStorage.setItem('message', displayDate.innerHTML);
+}
+
+function displaySameData2(){
+    displayDate.innerHTML = localStorage.getItem('message');
+}
+
+displaySameData2();
+
+// DISPLAY START TIME
+

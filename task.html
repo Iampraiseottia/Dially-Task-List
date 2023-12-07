@@ -18,14 +18,40 @@
 
         <div class="addTask">
             <input placeholder="Add Your Task" type="text" name="InputTask" id="InputTask" class="InputTask">
-            <button onclick="addTask()" class="add">Add</button>
+            <input type="time" name="Start Time" id="Start" class="Start">
+            <input type="time" name="End Time" id="End" class="End">
+            <input type="date" name="Ser Date" id="Date" class="Date">
         </div>
+        <button onclick="addTask()" class="add">Add</button>
+
 
         <ul id="taskList">
             <!-- <li class="checked">Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li> -->
         </ul>
+
+        <br>
+        <p id="displayDate"></p>
+
+        <div id="details">
+            <div class="prinzo">
+                <img src="img/checked.png" class="details-img">
+                <p>
+                    Task Completed!
+                </p>
+            </div>
+            <div class="prinzo">
+                <img src="img/unchecked.png" class="details-img">
+                <p>
+                    Task NOT Completed!
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <img src="img/tech.png" class="footer-img">OTTIATECH @ 2023
+        </footer>
     </section>
 
     <script src="record.js"></script>
