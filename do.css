@@ -19,7 +19,7 @@ body{
     border: 1px solid linear-gradient(to right, lightseagreen, cyan);
     border-radius: 4px;
     box-shadow: 1px 1px 8px gray;
-    
+    margin-bottom: 150px;
 }
 
 .todo-header{
@@ -150,8 +150,8 @@ ul li span:hover{
 }
 
 .details-img{
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
 }
 
 #details{
@@ -169,8 +169,9 @@ ul li span:hover{
 
 .prinzo p{
     margin-left: 8px;
-    margin-top: 5px;
+    margin-top: 3px;
     font-size: 16px;
+    font-size: 15.5px;
 }
 
 footer{
@@ -190,4 +191,11 @@ footer:hover{
     border-radius: 50%;
     vertical-align: bottom;
     margin-right: 6px;
+}
+
+.display{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 44px;
 }

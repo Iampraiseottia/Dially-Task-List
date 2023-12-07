@@ -65,3 +65,44 @@ displaySameData2();
 
 // DISPLAY START TIME
 
+var startTimeInput = document.getElementById('Start');
+var startTimeDisplay = document.getElementById('startTimeDisplay');
+startTimeDisplay.style.fontWeight = '600';
+
+startTimeInput.addEventListener('input', function() {
+    var startTime = startTimeInput.value;
+    startTimeDisplay.textContent = `Task Start Time: ${startTime}`;
+    saveStartTimeLocally();
+});
+
+function saveStartTimeLocally(){
+    localStorage.setItem('taskStart', startTimeDisplay.innerHTML);
+}
+
+function displayStartTime(){
+    startTimeDisplay.innerHTML = localStorage.getItem('taskStart');
+}
+
+displayStartTime();
+
+// DISPLAY END TIME
+
+var endTimeInput = document.getElementById('End');
+var endTimeDisplay = document.getElementById('endTimeDisplay');
+endTimeDisplay.style.fontWeight = '600';
+endTimeInput.addEventListener('input', function() {
+    var endTime = endTimeInput.value;
+    endTimeDisplay.textContent = `Task End Time: ${endTime}`;
+    saveEndTimeLocally();
+});
+
+function saveEndTimeLocally(){
+    localStorage.setItem('taskEnd', endTimeDisplay.innerHTML);
+}
+
+function displayEndTime(){
+    endTimeDisplay.innerHTML = localStorage.getItem('taskEnd');
+}
+
+displayEndTime();
+
