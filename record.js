@@ -13,6 +13,7 @@ function addTask(){
         li.appendChild(cross);
 
     }
+    
     getTask.value = '';
     saveDataLocally();
 }
@@ -37,6 +38,8 @@ function displaySameData(){
 }
 
 displaySameData();
+
+
 
 // DISPLAY DATE
 const date =  document.getElementById('Date');

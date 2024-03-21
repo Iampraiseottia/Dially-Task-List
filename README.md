@@ -12,3 +12,5 @@ You can set the End time for each task
 You can mark task as done when you complete task set
 
 You can delete task
+
+Helps an individual organize and become more efficient & effective
