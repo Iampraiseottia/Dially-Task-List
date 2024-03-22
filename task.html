@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Record Your Task For Eachday | OTTIATECH</title>
-    <link rel="stylesheet" href="do.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="do.css" />
+  </head>
+  <body>
     <section id="todo-container">
-        <div class="todo-header">
-            <h1 id="TO-DO-Name">
-                YOUR TO-DO LIST
-            </h1>
-            
-            <img src="img/icon.png" class="todo-header-img">
+      <div class="todo-header">
+        <h1 id="TO-DO-Name">YOUR TO-DO LIST</h1>
+
+        <img src="img/icon.png" class="todo-header-img" />
+      </div>
+
+      <div class="addTask">
+        <input
+          placeholder="Add Your Task"
+          type="text"
+          name="InputTask"
+          id="InputTask"
+          class="InputTask"
+        />
+        <input type="time" name="Start Time" id="Start" class="Start" />
+        <input type="time" name="End Time" id="End" class="End" />
+        <input type="date" name="Ser Date" id="Date" class="Date" />
+      </div>
+      <button onclick="addTask()" class="add">Add</button>
+
+      <ul id="taskList"></ul>
+
+      <div class="display">
+        <p id="startTimeDisplay"></p>
+        <p id="endTimeDisplay"></p>
+      </div>
+
+      <br />
+      <p id="displayDate"></p>
+
+      <div id="details">
+        <div class="prinzo">
+          <img src="img/checked.png" class="details-img" />
+          <p>Task Completed!</p>
         </div>
-
-        <div class="addTask">
-            <input placeholder="Add Your Task" type="text" name="InputTask" id="InputTask" class="InputTask">
-            <input type="time" name="Start Time" id="Start" class="Start">
-            <input type="time" name="End Time" id="End" class="End">
-            <input type="date" name="Ser Date" id="Date" class="Date">
+        <div class="prinzo">
+          <img src="img/unchecked.png" class="details-img" />
+          <p>Task NOT Completed!</p>
         </div>
-        <button onclick="addTask()" class="add">Add</button>
+      </div>
 
-
-        <ul id="taskList"></ul>
-
-        <div class="display">
-            <p id="startTimeDisplay"></p> 
-            <p id="endTimeDisplay"></p>
-        </div>
-
-        <br>
-        <p id="displayDate"></p>
-        
-
-
-        <div id="details">
-            <div class="prinzo">
-                <img src="img/checked.png" class="details-img">
-                <p>
-                    Task Completed!
-                </p>
-            </div>
-            <div class="prinzo">
-                <img src="img/unchecked.png" class="details-img">
-                <p>
-                    Task NOT Completed!
-                </p>
-            </div>
-        </div>
-
-        <footer>
-            <img src="img/tech.png" class="footer-img">OTTIATECH @ 2023
-        </footer>
+      <footer>
+        <img src="img/tech.png" class="footer-img" />OTTIATECH @ 2023
+      </footer>
     </section>
 
     <script src="record.js"></script>
-    
-</body>
+  </body>
 </html>

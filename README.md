@@ -1,4 +1,5 @@
 # Dially-Task-List
+
 Web application to record your task for the coming day with it's specifications the night before
 
 Helps you plan your follwing date during the previous day
@@ -14,3 +15,5 @@ You can mark task as done when you complete task set
 You can delete task
 
 Helps an individual organize and become more efficient & effective
+
+Keep track of your tasks and tellings you the status of completion
